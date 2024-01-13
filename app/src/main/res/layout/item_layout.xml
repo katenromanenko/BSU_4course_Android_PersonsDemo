@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#8BC34A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/p1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ivan"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/imagePhoto"
+            app:layout_constraintTop_toTopOf="@+id/imagePhoto" />
+
+        <TextView
+            android:id="@+id/textSName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ivanov"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/imagePhoto"
+            app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+        <TextView
+            android:id="@+id/textAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36 лет"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/imagePhoto"
+            app:layout_constraintTop_toBottomOf="@+id/textSName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
